@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Note_Everything</title>
+
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div onclick="show()" id="wrap"></div>
+        <div id="window">
+
+            <button class="buttonWindow" onclick="generateInput()">Add</button>
+            <select name="list" id="typeList">
+                <option value="circle">Circle</option>
+                <option value="square">Square</option>
+                <option value="disc">Disc</option>
+            </select>
+            <button class="buttonWindow" onclick="generateList()">Generate list</button>
+            <form id="listId"></form>
+
+        </div>
+
+        <div id="windowTable">
+            <form id="tableId">
+            <input  type="text" placeholder="Enter count of rows">
+            <input type="text" placeholder="Enter count of colums">
+            <input type="text" placeholder="Enter width of cells (px)">
+            <input type="text" placeholder="Enter height of cells (px)">
+            </form>
+            <button class="buttonWindow" onclick="generateTable()">Generate table</button>
+        </div>
+
+
+        <div class="conteinerLeft">
+
+
+
+
+            <div class="clock">
+
+                <div class="hours-container">
+                    <div class="hours"></div>
+                </div>
+                <div class="minutes-container">
+                    <div class="minutes"></div>
+                </div>
+                <div class="seconds-container">
+                    <div class="seconds"></div>
+                </div>
+            </div>
+
+
+
+            <img src="img/stamp.png" alt="Office Stamp" class="stamp"> </div>
+        <div class="clipboard">
+            <div class="screen">
+
+
+
+                <div class="menu"> <span class="icon" id="alineJustify">
+                    <i class="fa fa-align-justify fa-2x" aria-hidden="true"></i></span>
+                    <span class="icon" id="alineLeft"> <i class="fa fa-align-left fa-2x" aria-hidden="true"></i></span>
+                    <span class="icon" id="alineRight"> <i class="fa fa-align-right fa-2x" aria-hidden="true"></i></span>
+                    <span class="icon" id="alineCenter"> <i class="fa fa-align-center fa-2x" aria-hidden="true"></i></span>
+                    <span class="icon" id="bold"><i class="fa fa-bold fa-2x" aria-hidden="true"></i></span>
+                    <span class="icon" id="italic"><i class="fa fa-italic fa-2x" aria-hidden="true"></i></span>
+                    <span class="icon" id="underline"> <i class="fa fa-underline fa-2x" aria-hidden="true"></i></span>
+                    <span class="icon" id="textHeight"><i class="fa fa-text-height fa-2x" aria-hidden="true" title="Size"></i></span>
+                    <span class="icon" id="table"> <i class="fa fa-table fa-2x" aria-hidden="true"></i></span>
+                    <span class="icon" id="ul" onclick="show()"><i class="fa fa-list-ul fa-2x" aria-hidden="true"></i></span>
+
+                </div>
+                <form name="my_form">
+                    <p>
+                        <textarea name="my_textarea" placeholder="Your text! Have fun)" id="text"></textarea>
+                    </p>
+                </form>
+                <button onclick="cloneText()" class="buttonClone">Clone my text</button>
+                 <button onclick="cloneTextDel()" class="buttonClone">Clone and delete previous text</button>
+                <pre id="clone"></pre>
+
+            </div>
+        </div> <img src="img/pensil.png" alt="Pensil" class="pensil">
+        <img src="img/pensil.png" alt="Pensil" class="pensil">
+        <img src="img/pensil.png" alt="Pensil" class="pensil">
+    </div>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
